@@ -24,13 +24,9 @@ class Instructor extends Person{
         return `${student.name} receives a perfect score on ${subject}!`
     };
     projectComplete(student){
-        console.log(student.grade);
         let score = Math.floor(Math.random() * (10 - -10) + -10);
-        console.log(score);
         let newGrade = student.grade + score;
-        console.log(newGrade);
         student.grade = newGrade;
-        console.log(student.grade);
         return `${student.name} has earned a score of ${score} bringing their total grade to ${student.grade}%.`
     }
 }
